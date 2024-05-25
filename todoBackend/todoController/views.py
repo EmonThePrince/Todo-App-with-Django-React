@@ -68,8 +68,6 @@ def current_user(request):
     user = request.user
     return Response({'id': user.id, 'username': user.username})
 
-
-
 #authentication using normal django authentication
 @api_view(['POST'])
 def register(request: Request):
